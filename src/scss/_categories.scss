@@ -1,0 +1,16 @@
+.small-category-card {
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  height: 200px; /* Card height small */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-small-img {
+  width: 180px;   /* Adjust size as you want (180–220 recommended) */
+  height: 180px;  /* Square image */
+  object-fit: cover;
+  border-radius: 10px;
+}
