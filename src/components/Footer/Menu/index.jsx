@@ -11,7 +11,7 @@ const Menu = () => {
                 <Row gutter={[18, 18]} >
                     <Col xs={12} sm={12} md={8} lg={8} >
                         <Title level={2} >Raghad Fabrics</Title>
-                        <Paragraph style={{ fontSize: '17px' }} >Savor the artistry where every dish is a culinary masterpiece</Paragraph>
+                        <Paragraph style={{ fontSize: '17px' }} >Step into a world where every fabric is crafted to perfection.</Paragraph>
                     </Col>
                     <Col xs={12} sm={12} md={8} lg={8} >
                         <Title level={4} >Main Menu</Title>

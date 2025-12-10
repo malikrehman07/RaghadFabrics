@@ -3,7 +3,7 @@ import Hero from './Hero'
 import Categories from './Categories'
 import Clients from './Clients'
 import Gallery from './Gallery'
-import Contact from '../Contact'
+import NewsLetter from './Newsletter'
 
 const Home = () => {
     return (
@@ -12,6 +12,7 @@ const Home = () => {
             <Clients />
             <Categories />
             <Gallery />
+            <NewsLetter />
         </main>
     )
 }
