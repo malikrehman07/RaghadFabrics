@@ -11,7 +11,7 @@ const Contact = () => {
   const handleSubmit = async (values) => {
     setLoading(true);
     try {
-      await axios.post("http://localhost:8000/contact", values);
+      await axios.post("https://api.raghadfabric.com/contact", values);
       message.success("Message sent successfully!");
     } catch (err) {
       console.error(err);
