@@ -3,7 +3,7 @@ import Hero from './Hero'
 import Categories from './Categories'
 import Clients from './Clients'
 import Gallery from './Gallery'
-import NewsLetter from './Newsletter'
+import NewsLetter from './NewsLetter'
 
 const Home = () => {
     return (
