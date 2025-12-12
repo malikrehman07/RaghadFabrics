@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Image } from 'antd'
 import { Link, useNavigate } from 'react-router-dom'
 import { MdArrowOutward } from "react-icons/md";
-import fabrics from '../../assets/fabrics.svg';
+import fabrics from '../../assets/raghadfabric.svg';
 
 const Header = () => {
     const navigate = useNavigate()

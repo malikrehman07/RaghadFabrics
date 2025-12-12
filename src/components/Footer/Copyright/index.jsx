@@ -8,7 +8,7 @@ const Copyright = () => {
     <div className="container py-2 ">
       <Row>
         <Col span={24}>
-          <Paragraph className="text-center mb-0">&copy;{date}. All Rights Reserved.</Paragraph>
+          <Paragraph className="text-center mb-0">&copy;{date} Malik Rehman. All Rights Reserved.</Paragraph>
         </Col>
       </Row>
     </div>

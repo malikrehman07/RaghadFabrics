@@ -3,16 +3,6 @@ import { Typography, Row, Col, Card } from "antd";
 
 const { Title, Paragraph } = Typography;
 
-const clientLogos = [
-  "Gul Ahmed",
-  "Al-Karam",
-  "Zellbury",
-  "Bonanza Satrangi",
-  "Nishat Linen",
-  "Junaid Jamshed (J.)",
-  "Khaadi",
-  "Sapphire",
-];
 
 const About = () => {
   return (

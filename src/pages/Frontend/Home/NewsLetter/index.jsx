@@ -10,38 +10,38 @@ const NewsLetter = () => {
     const handleChange = (e) => setState(s => ({ ...s, [e.target.name]: e.target.value }))
 
 
-    // const handleSubscribe = async () => {
-    //     const { email } = state;
-    //     if (!window.isEmail(email)) { return window.notify("Please Enter Your Email", "error") }
-    //     try {
-    //         setLoading(true);
-    //         const res = await axios.post("https://shop-co-nbni.vercel.app/newsletter/subscribe", { email });
-
-    //         if (res.data?.success) {
-    //             window.notify("Subscribed successfully! 🎉", 'success');
-    //         } else {
-    //             window.notify(res.data?.message || "Subscription failed", 'error');
-    //         }
-    //     } catch (error) {
-    //         window.notify(error.response?.data?.message || "Something went wrong!", 'error');
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
     const handleSubscribe = async () => {
         const { email } = state;
         if (!window.isEmail(email)) { return window.notify("Please Enter Your Email", "error") }
         try {
             setLoading(true);
-            // Simulate API call
-            await new Promise((resolve) => setTimeout(resolve, 2000));
-            window.notify("Subscribed successfully! 🎉", 'success');
+            const res = await axios.post("http://localhost:8000/newsletter/subscribe", { email });
+
+            if (res.data?.success) {
+                window.notify("Subscribed successfully! 🎉", 'success');
+            } else {
+                window.notify(res.data?.message || "Subscription failed", 'error');
+            }
         } catch (error) {
-            window.notify("Something went wrong!", 'error');
+            window.notify(error.response?.data?.message || "Something went wrong!", 'error');
         } finally {
             setLoading(false);
         }
     };
+    // const handleSubscribe = async () => {
+    //     const { email } = state;
+    //     if (!window.isEmail(email)) { return window.notify("Please Enter Your Email", "error") }
+    //     try {
+    //         setLoading(true);
+    //         // Simulate API call
+    //         await new Promise((resolve) => setTimeout(resolve, 2000));
+    //         window.notify("Subscribed successfully! 🎉", 'success');
+    //     } catch (error) {
+    //         window.notify("Something went wrong!", 'error');
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // };
     return (
         <div className="container py-5 bg-black rounded-5 my-5 ">
             <Row gutter={[16, 16]} align="middle" justify="center" className='mx-auto'>

@@ -6,7 +6,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 const { Title, Paragraph } = Typography
 const Menu = () => {
     return (
-        <div style={{backgroundColor:'#ededed'}} >
+        <div style={{ backgroundColor: '#ededed' }} >
             <div className='container py-5'>
                 <Row gutter={[18, 18]} >
                     <Col xs={12} sm={12} md={8} lg={8} >
@@ -21,8 +21,8 @@ const Menu = () => {
                     </Col>
                     <Col xs={12} sm={12} md={8} lg={8} >
                         <Title level={4} >Contact Us</Title>
-                        <Paragraph>contact@raghadfabrics.com</Paragraph>
-                        <Paragraph>+64 958 248 966</Paragraph>
+                        <Paragraph>zaeemzia@raghadfabric.com</Paragraph>
+                        <Paragraph>+92 304 866 6323</Paragraph>
                         <Paragraph><Flex gap="middle" align="center">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                                 <FaFacebookF size={20} color="#1877F2" />
