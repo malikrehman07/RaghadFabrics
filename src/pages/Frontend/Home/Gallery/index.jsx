@@ -1,12 +1,12 @@
 import { Col, Image, Row, Typography } from 'antd'
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import AOS from 'aos';
+import Aos from 'aos';
 
 const Gallery = () => {
     const { Title, Paragraph } = Typography
     useEffect(() => {
-            AOS.init({ duration: 1000, once: true });
+            Aos.init({ duration: 1000, once: true });
         }, []);
     return (
             <div className="container py-5" >

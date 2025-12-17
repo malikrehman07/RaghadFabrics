@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row, Col, Form, Input, Button, Typography, message } from 'antd';
 import { PhoneOutlined, MailOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import axios from 'axios';
+import Aos from 'aos';
 
 const { Title, Paragraph } = Typography;
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false)
   const handleSubmit = async (values) => {
@@ -34,7 +38,7 @@ const Contact = () => {
   return (
     <main>
       <div className="container my-5 py-4">
-        <Row gutter={[32, 32]}>
+        <Row gutter={[32, 32]} data-aos="fade-up" data-aos-delay="200"  >
           {/* Left Side - Contact Info */}
           <Col xs={24} md={10}>
             <Title level={2}>Contact Us</Title>

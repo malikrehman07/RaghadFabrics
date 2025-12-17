@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Typography, Row, Col, Card } from "antd";
+import Aos from "aos";
 
 const { Title, Paragraph } = Typography;
 
 
 const About = () => {
+  useEffect(() => {
+              Aos.init({ duration: 1000, once: true });
+          }, []);
   return (
     <main>
-
       <div className="container py-5">
 
         {/* Page Title */}
-        <Title level={1} className="text-center mb-4">
+        <Title level={1} className="text-center mb-4" data-aos="fade-up" data-aos-delay="200" >
           About Us
         </Title>
 
         {/* Intro Section */}
-        <Paragraph className="text-center fs-5 mb-5">
+        <Paragraph className="text-center fs-5 mb-5" data-aos="fade-up" data-aos-delay="100" >
           Raghad Fabrics is a trusted name in Pakistan’s textile industry, delivering
           high-quality fabrics to manufacturers, exporters, retailers, and leading apparel
           brands. With a strong commitment to excellence and innovation, we produce premium
@@ -25,7 +28,7 @@ const About = () => {
 
         {/* Vision & Mission */}
         <Row gutter={[30, 30]} className="my-5">
-          <Col md={12}>
+          <Col md={12} data-aos="fade-up" data-aos-delay="100" >
             <Card className="p-3 shadow-lg" style={{ height: '270px', backgroundColor: '#ededed' }} >
               <Title level={4}>Our Vision</Title>
               <Paragraph>
@@ -36,7 +39,7 @@ const About = () => {
             </Card>
           </Col>
 
-          <Col md={12}>
+          <Col md={12} data-aos="fade-up" data-aos-delay="200" >
             <Card className="p-3 shadow-lg" style={{ height: '270px', backgroundColor: '#ededed' }} >
               <Title level={4}>Our Mission</Title>
               <Paragraph>
@@ -50,18 +53,18 @@ const About = () => {
         </Row>
 
         {/* Why Choose Us */}
-        <Title level={3}>Why Choose Us?</Title>
+        <Title level={3} data-aos="fade-up" data-aos-delay="200" >Why Choose Us?</Title>
         <ul>
-          <li>Premium Quality Fabrics</li>
-          <li>Experienced Textile Professionals</li>
-          <li>Modern Machinery & Controlled Production</li>
-          <li>Custom Manufacturing Options</li>
-          <li>On-Time Delivery</li>
-          <li>Competitive Pricing</li>
+          <li data-aos="fade-up" data-aos-delay="100" >Premium Quality Fabrics</li>
+          <li data-aos="fade-up" data-aos-delay="200" >Experienced Textile Professionals</li>
+          <li data-aos="fade-up" data-aos-delay="300" >Modern Machinery & Controlled Production</li>
+          <li data-aos="fade-up" data-aos-delay="400" >Custom Manufacturing Options</li>
+          <li data-aos="fade-up" data-aos-delay="500" >On-Time Delivery</li>
+          <li data-aos="fade-up" data-aos-delay="600" >Competitive Pricing</li>
         </ul>
 
         {/* Final Section */}
-        <Paragraph className="text-center mt-5 fs-5">
+        <Paragraph className="text-center mt-5 fs-5" data-aos="fade-up" data-aos-delay="200" >
           Whether you are a garment manufacturer, exporter, brand, or retailer, Raghad Fabrics
           is ready to supply the fabric quality you need to bring your products to life.
           We look forward to partnering with you.

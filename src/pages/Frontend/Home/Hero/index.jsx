@@ -1,8 +1,12 @@
 import { Button, Carousel, Col, Row, Typography } from 'antd'
-import React from 'react'
+import Aos from 'aos';
+import React, { useEffect } from 'react'
 
 const Hero = () => {
     const { Title, Paragraph } = Typography;
+    useEffect(() => {
+            Aos.init({ duration: 1000, once: true });
+        }, []);
     const slides = [
         {
             title: "Raghad Fabrics",
@@ -40,9 +44,9 @@ const Hero = () => {
                         className="hero-slide d-flex align-items-center justify-content-center text-center"
                         style={{ backgroundImage: `url(${slide.img})` }}
                     >
-                        <div className="hero-text container">
-                            <Title level={1} style={{fontSize:'4.5rem', fontWeight:'700'}} className='text-white mb-2 ' >{slide.title}</Title>
-                            <Paragraph style={{fontSize:'1.4rem'}} className='text-white' >{slide.subtitle}</Paragraph>
+                        <div className="hero-text container" >
+                            <Title level={1} style={{fontSize:'4.5rem', fontWeight:'700'}} className='text-white mb-2 ' data-aos="fade-up" data-aos-delay="100" >{slide.title}</Title>
+                            <Paragraph style={{fontSize:'1.4rem'}} className='text-white' data-aos="fade-up" data-aos-delay="200" >{slide.subtitle}</Paragraph>
                         </div>
                     </div>
                 </div>
