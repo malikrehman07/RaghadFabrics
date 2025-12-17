@@ -3,7 +3,8 @@ import Hero from './Hero'
 import Categories from './Categories'
 import Clients from './Clients'
 import Gallery from './Gallery'
-import NewsLetter from './NewsLetter'
+import Choose from './Choose'
+import Contact from '../Contact'
 
 const Home = () => {
     return (
@@ -12,7 +13,8 @@ const Home = () => {
             <Clients />
             <Categories />
             <Gallery />
-            <NewsLetter />
+            <Choose />
+            <Contact />
         </main>
     )
 }

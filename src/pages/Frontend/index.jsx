@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import Home from './Home'
 import Contact from './Contact'
 import About from './About'
+import NoPage from './Misc/NoPage'
 
 const Frontend = () => {
     return (
@@ -14,6 +15,7 @@ const Frontend = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='*' element={<NoPage />} />
             </Routes>
             <Footer />
         </>
