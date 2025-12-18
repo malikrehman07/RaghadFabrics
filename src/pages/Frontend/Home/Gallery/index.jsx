@@ -32,7 +32,7 @@ const Gallery = () => {
                         <Image src="https://res.cloudinary.com/djpvxvokp/image/upload/v1765285679/Gallery_2_pnugjh.jpg" alt="Raghad Fabrics" style={{ borderRadius: '2%' }} className='object-fit-cover ' width="350px" height='250px' />
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={8} className='d-flex flex-coulmn justify-content-center align-items-center' data-aos="fade-up" data-aos-delay="600" >
-                        <Image src="https://res.cloudinary.com/djpvxvokp/image/upload/v1765285560/Gallery_akxtua.jpg" alt="Raghad Fabrics" style={{ borderRadius: '2%' }} className='object-fit-cover ' width="350px" height='250px' />
+                        <Image src="https://res.cloudinary.com/djpvxvokp/image/upload/v1765285561/Gallery_2_m3hgdt.jpg" alt="Raghad Fabrics" style={{ borderRadius: '2%' }} className='object-fit-cover ' width="350px" height='250px' />
                     </Col>
                 </Row>
             </div>

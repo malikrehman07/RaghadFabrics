@@ -2,18 +2,11 @@ import { Typography } from 'antd';
 import React from 'react'
 
 const logos = [
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283606/client_lasays.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283396/client_2_sswcrq.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283607/client_3_bhibaa.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283607/client_1_xaj447.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283606/client_2_daf3if.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283841/client_4_aji8tw.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283841/client_5_kazusm.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283841/client_6_pskje9.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765283841/client_7_jjyxag.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765284090/client_8_ns5ej2.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765284090/client_9_vlcfjs.svg",
-    "https://res.cloudinary.com/djpvxvokp/image/upload/v1765284089/client_10_kek8ft.svg",
+    "https://res.cloudinary.com/djpvxvokp/image/upload/v1766056866/client_11_m2yvd9.svg",
+    "https://res.cloudinary.com/djpvxvokp/image/upload/v1766056866/client_12_cagh0h.svg",
+    "https://res.cloudinary.com/djpvxvokp/image/upload/v1766056866/client_15_o951aa.svg",
+    "https://res.cloudinary.com/djpvxvokp/image/upload/v1766056866/client_13_czzrfa.svg",
+    "https://res.cloudinary.com/djpvxvokp/image/upload/v1766056866/client_14_dsvfau.svg",
 ];
 const Clients = () => {
     const { Title } = Typography;
@@ -25,7 +18,7 @@ const Clients = () => {
             <div className="logos-wrapper">
                 <div className="logos-track">
                     {allLogos.map((logo, index) => (
-                        <img key={index} src={logo} className="trusted-logo" alt="" />
+                        <img key={index} src={logo} className="trusted-logo" alt="clients" />
                     ))}
                 </div>
             </div>
