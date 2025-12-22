@@ -20,10 +20,10 @@ const Header = () => {
                                 <Link to='/' className="nav-link active" aria-current="page">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='/about' className="nav-link active" aria-current="page">About</Link>
+                                <Link to='/about' className="nav-link active" aria-current="page">About Us</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='/contact' className="nav-link active" aria-current="page">Contact</Link>
+                                <Link to='/contact' className="nav-link active" aria-current="page">Contact Us</Link>
                             </li>
                         </ul>
                         <div className="d-flex">

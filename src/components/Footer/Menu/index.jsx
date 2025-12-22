@@ -16,8 +16,8 @@ const Menu = () => {
                     <Col xs={12} sm={12} md={8} lg={8} >
                         <Title level={4} >Main Menu</Title>
                         <Link to='/' className="nav-link py-1" >Home</Link>
-                        <Link to='/about' className="nav-link py-1" >About</Link>
-                        <Link to='/contact' className="nav-link py-1" >Contact</Link>
+                        <Link to='/about' className="nav-link py-1" >About Us</Link>
+                        <Link to='/contact' className="nav-link py-1" >Contact Us</Link>
                     </Col>
                     <Col xs={12} sm={12} md={8} lg={8} >
                         <Title level={4} >Contact Us</Title>
